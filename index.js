@@ -97,7 +97,7 @@ button.addEventListener("click", (e) => {
     calculateAverage();
     value.innerText = current + "m/s^2";
 
-    if (current > 3) {
+    if (current > 0.5) {
         img.src = "/assets/spilled_cup.png";
         img.scale(current);
     }

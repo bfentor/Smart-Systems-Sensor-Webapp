@@ -10,7 +10,7 @@ let accelerationValues = [];
 if (window.DeviceMotionEvent) {
     if (typeof DeviceMotionEvent.requestPermission === 'function') {
         // iOS 13+ requires permission
-        const button = document.getElementById('button1');
+        const button = document.getElementById('button');
         button.addEventListener('click', () => {
             DeviceMotionEvent.requestPermission()
                 .then((response) => {
